@@ -29,5 +29,12 @@ module.exports = {
       info: colors.sky
     },
   },
-  plugins: [ require('@headlessui/tailwindcss')({ prefix: 'ui' }) ]
+  plugins: [
+    require('@headlessui/tailwindcss')({ prefix: 'ui' }),
+    function({ addBase }) {
+      addBase({
+         'html': { fontSize: "14px" },
+       })
+     }
+  ]
 }
