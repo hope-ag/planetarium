@@ -1,12 +1,12 @@
 <template>
   <nav>
     <div class="container flex items-center">
-      <div class="text-primary font-black text-lg">/P</div>
+      <div class="text-primary font-extrabold text-3xl">/P</div>
       <ul class="flex items-center ml-auto gap-8">
         <li v-for="link in navLinks" :key="link.name">
           <NuxtLink
             :data-link="link.name"
-            class="nav-link py-2 px-1 rounded block"
+            class="nav-link py-3 px-1 rounded block"
             :to="link.path">
              <span class="block">
               {{ link.name }}
