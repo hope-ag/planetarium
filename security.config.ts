@@ -11,11 +11,7 @@ export const securityConfig: SecurityPluginOptions = {
       route: '',
     },
     crossOriginEmbedderPolicy: false,
-    contentSecurityPolicy: {
-      value:
-        "base-uri 'self';form-action 'self';frame-ancestors 'self';object-src 'none';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
-      route: '',
-    },
+    contentSecurityPolicy: false,
     originAgentCluster: {
       value: "?1",
       route: '',

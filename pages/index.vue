@@ -1,6 +1,6 @@
 <template>
   <NuxtLayout name="nav-layout" :padTop="false">
-    <div class="container pt-20">
+    <div class="h-full">
       <HeroSection />
       <!-- welcome
       <button class="btn btn-primary">
